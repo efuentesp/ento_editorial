@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Ento Editorial feature.
+ */
+
+include_once 'ento_editorial.features.inc';
