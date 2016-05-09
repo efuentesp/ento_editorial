@@ -22,5 +22,17 @@ function ento_editorial_user_default_roles() {
     'weight' => 4,
   );
 
+  // Exported role: docente.
+  $roles['docente'] = array(
+    'name' => 'docente',
+    'weight' => 3,
+  );
+
+  // Exported role: evaluador.
+  $roles['evaluador'] = array(
+    'name' => 'evaluador',
+    'weight' => 6,
+  );
+
   return $roles;
 }
