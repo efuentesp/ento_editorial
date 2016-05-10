@@ -10,6 +10,28 @@
 function ento_editorial_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_cuestionario_descripcion'.
+  $field_bases['field_cuestionario_descripcion'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cuestionario_descripcion',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_docente_email'.
   $field_bases['field_docente_email'] = array(
     'active' => 1,
@@ -65,7 +87,7 @@ function ento_editorial_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_docente_nivel_escuela',
     'field_permissions' => array(
-      'type' => 2,
+      'type' => 0,
     ),
     'indexes' => array(
       'target_id' => array(
@@ -268,7 +290,7 @@ function ento_editorial_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_nivel_escuela',
     'field_permissions' => array(
-      'type' => 2,
+      'type' => 0,
     ),
     'indexes' => array(
       'target_id' => array(

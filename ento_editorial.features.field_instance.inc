@@ -10,6 +10,47 @@
 function ento_editorial_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'node-cuestionario-field_cuestionario_descripcion'.
+  $field_instances['node-cuestionario-field_cuestionario_descripcion'] = array(
+    'bundle' => 'cuestionario',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_cuestionario_descripcion',
+    'label' => 'Descripción',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => -4,
+    ),
+  );
+
   // Exported field_instance: 'node-docente-field_docente_email'.
   $field_instances['node-docente-field_docente_email'] = array(
     'bundle' => 'docente',
@@ -45,7 +86,7 @@ function ento_editorial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => -4,
+      'weight' => 2,
     ),
   );
 
@@ -82,7 +123,7 @@ function ento_editorial_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => -1,
+      'weight' => 4,
     ),
   );
 
@@ -91,7 +132,7 @@ function ento_editorial_field_default_field_instances() {
     'bundle' => 'docente',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Nivel Escolar de la Escuela a la que pertenece el Docente. Solo es visible para el ADMINISTRADOR.',
+    'description' => 'Nivel Escolar de la Escuela a la que pertenece el Docente.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -116,20 +157,27 @@ function ento_editorial_field_default_field_instances() {
     'entityconnect_unload_edit' => 0,
     'field_name' => 'field_docente_nivel_escuela',
     'label' => 'Nivel Escolar',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'entity_reference_url',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
+        'autocomplete_match' => 'contains',
+        'edit_fallback' => 1,
+        'entity_link' => array(
+          'destination' => 'default',
+          'full' => 0,
+          'hover_title' => '',
+          'teaser' => 0,
+          'title' => '',
+        ),
+        'fallback' => 'select',
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => -2,
+      'type' => 'entity_reference_url',
+      'weight' => 0,
     ),
   );
 
@@ -176,7 +224,7 @@ function ento_editorial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => -3,
+      'weight' => 3,
     ),
   );
 
@@ -385,7 +433,7 @@ function ento_editorial_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => -4,
+      'weight' => 2,
     ),
   );
 
@@ -394,7 +442,7 @@ function ento_editorial_field_default_field_instances() {
     'bundle' => 'nivel_escuela',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Escuela a la que está asignado el Nivel Escolar. Solo es visible para el ADMINISTRADOR.',
+    'description' => 'Escuela a la que está asignado el Nivel Escolar.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -419,20 +467,27 @@ function ento_editorial_field_default_field_instances() {
     'entityconnect_unload_edit' => 0,
     'field_name' => 'field_nivel_escuela',
     'label' => 'Escuela',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'entity_reference_url',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
+        'autocomplete_match' => 'contains',
+        'edit_fallback' => 1,
+        'entity_link' => array(
+          'destination' => 'default',
+          'full' => 0,
+          'hover_title' => '',
+          'teaser' => 0,
+          'title' => 'Agregar Nivel',
+        ),
+        'fallback' => 'select',
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => -3,
+      'type' => 'entity_reference_url',
+      'weight' => 0,
     ),
   );
 
@@ -472,31 +527,32 @@ function ento_editorial_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'options',
       'settings' => array(
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => -2,
+      'type' => 'options_select',
+      'weight' => 3,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Correo electrónico del Administrador de la Escuela. Este será usado como su usuario para acceder al sistema.');
+  t('Descripción');
   t('Email');
   t('Email Administrador');
   t('Escuela');
-  t('Escuela a la que está asignado el Nivel Escolar. Solo es visible para el ADMINISTRADOR.');
+  t('Escuela a la que está asignado el Nivel Escolar.');
   t('Evaluador asignado');
   t('Evaluador encargado de revisar las competencias de los Docentes de este Nivel.');
   t('Materias');
   t('Materias que imparte el Docente.');
   t('Nivel Educativo');
   t('Nivel Escolar');
-  t('Nivel Escolar de la Escuela a la que pertenece el Docente. Solo es visible para el ADMINISTRADOR.');
+  t('Nivel Escolar de la Escuela a la que pertenece el Docente.');
   t('Referencia hacia el Usuario del Administrador de la Escuela. Solo visible para el ADMINISTRADOR.');
   t('Usuario');
   t('Usuario Admin');

@@ -5,6 +5,15 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function ento_editorial_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "path_breadcrumbs" && $api == "path_breadcrumbs") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_views_api().
  */
 function ento_editorial_views_api($module = NULL, $api = NULL) {
@@ -16,6 +25,14 @@ function ento_editorial_views_api($module = NULL, $api = NULL) {
  */
 function ento_editorial_node_info() {
   $items = array(
+    'cuestionario' => array(
+      'name' => t('Cuestionario'),
+      'base' => 'node_content',
+      'description' => t('Instrumento de investigación que consiste en una serie de preguntas y otras indicaciones con el propósito de obtener información de los consultados.'),
+      'has_title' => '1',
+      'title_label' => t('Nombre'),
+      'help' => '',
+    ),
     'docente' => array(
       'name' => t('Docente'),
       'base' => 'node_content',
