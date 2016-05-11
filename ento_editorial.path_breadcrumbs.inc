@@ -35,16 +35,6 @@ function ento_editorial_path_breadcrumbs_settings_info() {
           'context' => 'logged-in-user',
           'not' => FALSE,
         ),
-        1 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 5,
-            ),
-          ),
-          'context' => 'logged-in-user',
-          'not' => FALSE,
-        ),
       ),
       'logic' => 'and',
     ),
@@ -75,16 +65,6 @@ function ento_editorial_path_breadcrumbs_settings_info() {
           'name' => 'context_exists',
           'settings' => array(
             'exists' => '1',
-          ),
-          'context' => 'logged-in-user',
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 5,
-            ),
           ),
           'context' => 'logged-in-user',
           'not' => FALSE,
@@ -361,16 +341,6 @@ function ento_editorial_path_breadcrumbs_settings_info() {
           'context' => 'node',
           'not' => FALSE,
         ),
-        1 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 5,
-            ),
-          ),
-          'context' => 'logged-in-user',
-          'not' => FALSE,
-        ),
       ),
       'logic' => 'and',
     ),
@@ -413,16 +383,6 @@ function ento_editorial_path_breadcrumbs_settings_info() {
             ),
           ),
           'context' => 'node',
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 5,
-            ),
-          ),
-          'context' => 'logged-in-user',
           'not' => FALSE,
         ),
       ),
@@ -473,16 +433,6 @@ function ento_editorial_path_breadcrumbs_settings_info() {
           'name' => 'context_exists',
           'settings' => array(
             'exists' => '1',
-          ),
-          'context' => 'logged-in-user',
-          'not' => FALSE,
-        ),
-        2 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 5,
-            ),
           ),
           'context' => 'logged-in-user',
           'not' => FALSE,
