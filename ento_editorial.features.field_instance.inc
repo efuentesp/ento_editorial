@@ -10,6 +10,89 @@
 function ento_editorial_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-carga_archivos-field_carga_archivos_anexos'.
+  $field_instances['node-carga_archivos-field_carga_archivos_anexos'] = array(
+    'bundle' => 'carga_archivos',
+    'deleted' => 0,
+    'description' => 'Archivos con Instrucciones que el usuario podrá descargar previo a subir sus propios archivos.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_carga_archivos_anexos',
+    'label' => 'Archivos Anexos',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'file_directory' => 'archivos_instrucciones',
+      'file_extensions' => 'pdf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => -3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-carga_archivos-field_carga_archivos_instruccion'.
+  $field_instances['node-carga_archivos-field_carga_archivos_instruccion'] = array(
+    'bundle' => 'carga_archivos',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Instruciones que aparecerán antes de solicitar la carga de archivos.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_carga_archivos_instruccion',
+    'label' => 'Instrucciones',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => -4,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-cuestionario-field_cuestionario_descripcion'.
   $field_instances['node-cuestionario-field_cuestionario_descripcion'] = array(
@@ -48,6 +131,133 @@ function ento_editorial_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-curso-field_curso_descripcion'.
+  $field_instances['node-curso-field_curso_descripcion'] = array(
+    'bundle' => 'curso',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_curso_descripcion',
+    'label' => 'Descripción',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-curso-field_curso_dimension'.
+  $field_instances['node-curso-field_curso_dimension'] = array(
+    'bundle' => 'curso',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_curso_dimension',
+    'label' => 'Alcance',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => -3,
+    ),
+  );
+
+  // Exported field_instance: 'node-curso-field_curso_imagen'.
+  $field_instances['node-curso-field_curso_imagen'] = array(
+    'bundle' => 'curso',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_curso_imagen',
+    'label' => 'Imagen',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'cursos_imagenes',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'medium',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => -2,
     ),
   );
 
@@ -225,6 +435,132 @@ function ento_editorial_field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-dummy_resultados_dimension-field_resultado_dimension'.
+  $field_instances['node-dummy_resultados_dimension-field_resultado_dimension'] = array(
+    'bundle' => 'dummy_resultados_dimension',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_resultado_dimension',
+    'label' => 'Dimensión',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-dummy_resultados_dimension-field_resultado_dimension_ref'.
+  $field_instances['node-dummy_resultados_dimension-field_resultado_dimension_ref'] = array(
+    'bundle' => 'dummy_resultados_dimension',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_resultado_dimension_ref',
+    'label' => 'Referencia a la Dimensión',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => -2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-dummy_resultados_dimension-field_resultado_nivel'.
+  $field_instances['node-dummy_resultados_dimension-field_resultado_nivel'] = array(
+    'bundle' => 'dummy_resultados_dimension',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_resultado_nivel',
+    'label' => 'Nivel',
+    'required' => 1,
+    'settings' => array(
+      'max' => 4,
+      'min' => 0,
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => -3,
     ),
   );
 
@@ -538,21 +874,102 @@ function ento_editorial_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'taxonomy_term-dimensiones-field_dimensiones_cursos'.
+  $field_instances['taxonomy_term-dimensiones-field_dimensiones_cursos'] = array(
+    'bundle' => 'dimensiones',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'entityconnect_show_add_icon' => 0,
+    'entityconnect_show_edit_icon' => 0,
+    'entityconnect_unload_add' => 1,
+    'entityconnect_unload_edit' => 1,
+    'field_name' => 'field_dimensiones_cursos',
+    'label' => 'Cursos',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'taxonomy_term-niveles_desempeno-field_nivel_desempeno_color'.
+  $field_instances['taxonomy_term-niveles_desempeno-field_nivel_desempeno_color'] = array(
+    'bundle' => 'niveles_desempeno',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'color_field',
+        'settings' => array(),
+        'type' => 'color_field_default_formatter',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_nivel_desempeno_color',
+    'label' => 'Color',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'color_field',
+      'settings' => array(),
+      'type' => 'color_field_default_widget',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('Alcance');
+  t('Archivos Anexos');
+  t('Archivos con Instrucciones que el usuario podrá descargar previo a subir sus propios archivos.');
+  t('Color');
   t('Correo electrónico del Administrador de la Escuela. Este será usado como su usuario para acceder al sistema.');
+  t('Cursos');
   t('Descripción');
+  t('Dimensión');
   t('Email');
   t('Email Administrador');
   t('Escuela');
   t('Escuela a la que está asignado el Nivel Escolar.');
   t('Evaluador asignado');
   t('Evaluador encargado de revisar las competencias de los Docentes de este Nivel.');
+  t('Imagen');
+  t('Instrucciones');
+  t('Instruciones que aparecerán antes de solicitar la carga de archivos.');
   t('Materias');
   t('Materias que imparte el Docente.');
+  t('Nivel');
   t('Nivel Educativo');
   t('Nivel Escolar');
   t('Nivel Escolar de la Escuela a la que pertenece el Docente.');
+  t('Referencia a la Dimensión');
   t('Referencia hacia el Usuario del Administrador de la Escuela. Solo visible para el ADMINISTRADOR.');
   t('Usuario');
   t('Usuario Admin');

@@ -5,3 +5,16 @@
  */
 
 include_once 'ento_editorial.features.inc';
+
+/**
+ * Implements hook_charts_type_info().
+ */
+function ento_editorial_charts_type_info() {
+  $chart_types['areaspline'] = array(
+    'label' => t('Area-spline'),
+    'axis' => CHARTS_DUAL_AXIS,
+    'stacking' => TRUE,
+  );
+
+  return $chart_types;
+}
