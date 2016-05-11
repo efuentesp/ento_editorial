@@ -1,0 +1,3193 @@
+<?php
+/**
+ * @file
+ * ento_editorial.features.node_export_features.inc
+ */
+
+/**
+ * Implements hook_node_export_features_default().
+ */
+function ento_editorial_node_export_features_default() {
+  $node_export = array(
+  'code_string' => 'array(
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_cuestionario_descripcion\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Autoevaluación del Perfil del Docente para Educación Básica (Preescolar, Primaria y Secundaria).\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Autoevaluación del Perfil del Docente para Educación Básica (Preescolar, Primaria y Secundaria).\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Autoevaluación del Perfil Docente (Educación Básica)\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'cuestionario\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'0ba8232e-ae88-4c32-aec1-168df33df2ad\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'f22c7fa8-a445-48e0-b29b-407e2ab505c6\',
+      \'webform\' => array(
+        \'nid\' => \'16\',
+        \'next_serial\' => \'2\',
+        \'confirmation\' => \'\',
+        \'confirmation_format\' => \'filtered_html\',
+        \'redirect_url\' => \'<confirmation>\',
+        \'status\' => \'1\',
+        \'block\' => \'0\',
+        \'allow_draft\' => \'1\',
+        \'auto_save\' => \'0\',
+        \'submit_notice\' => \'1\',
+        \'confidential\' => \'0\',
+        \'submit_text\' => \'Enviar\',
+        \'submit_limit\' => \'1\',
+        \'submit_interval\' => \'-1\',
+        \'total_submit_limit\' => \'-1\',
+        \'total_submit_interval\' => \'-1\',
+        \'progressbar_bar\' => \'1\',
+        \'progressbar_page_number\' => \'0\',
+        \'progressbar_percent\' => \'0\',
+        \'progressbar_pagebreak_labels\' => \'1\',
+        \'progressbar_include_confirmation\' => \'1\',
+        \'progressbar_label_first\' => \'Dimensión 1\',
+        \'progressbar_label_confirmation\' => \'Fin\',
+        \'preview\' => \'0\',
+        \'preview_next_button_label\' => \'\',
+        \'preview_prev_button_label\' => \'\',
+        \'preview_title\' => \'\',
+        \'preview_message\' => \'\',
+        \'preview_message_format\' => \'filtered_html\',
+        \'preview_excluded_components\' => array(),
+        \'record_exists\' => TRUE,
+        \'roles\' => array(
+          \'4\',
+        ),
+        \'emails\' => array(),
+        \'components\' => array(
+          1 => array(
+            \'nid\' => 16,
+            \'cid\' => \'1\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_1\',
+            \'name\' => \'1. Un docente que conoce a sus alumnos, sabe cómo aprenden y lo que deben aprender\',
+            \'type\' => \'fieldset\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'css_classes\' => \'\',
+              \'title_display\' => 0,
+              \'collapsible\' => 0,
+              \'collapsed\' => 0,
+              \'description\' => \'\',
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'2\',
+            \'page_num\' => 1,
+          ),
+          2 => array(
+            \'nid\' => 16,
+            \'cid\' => \'2\',
+            \'pid\' => \'1\',
+            \'form_key\' => \'EB_1_1\',
+            \'name\' => \'1.1 Describe las características y los procesos de desarrollo y de aprendizaje de los alumnos para su práctica docente\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_1_1_1|1.1.1 Describo las características del desarrollo y del aprendizaje de mis alumnos para organizar mi intervención docente.\\r\\nEB_1_1_2|1.1.2 Describo las características del desarrollo y del aprendizaje de mis alumnos para poner en práctica mi intervención docente.\\r\\nEB_1_1_3|1.1.3 Identifico las características del entorno familiar, social y cultural de mis alumnos para organizar mi intervención docente.\\r\\nEB_1_1_4|1.1.4 Identifico las características del entorno familiar, social y cultural de mis alumnos para poner en práctica mi intervención docente.",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'1\',
+            \'page_num\' => 1,
+          ),
+          3 => array(
+            \'nid\' => 16,
+            \'cid\' => \'3\',
+            \'pid\' => \'1\',
+            \'form_key\' => \'EB_1_2\',
+            \'name\' => \'1.2 Analiza los propósitos educativos y los enfoques didácticos de la educación para su práctica docente.\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_1_2_1|1.2.1 Identifico los propósitos educativos del currículo vigente para organizar mi intervención docente. \\r\\nEB_1_2_2|1.2.2 Identifico los aspectos esenciales del enfoque didáctico de cada asignatura.\\r\\nEB_1_2_3|1.2.3 Explico las características de las situaciones de aprendizaje que planteo a mis alumnos a partir del enfoque didáctico de los campos formativos de preescolar, de las asignaturas de educación primaria o educación secundaria.\\r\\n",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'2\',
+            \'page_num\' => 1,
+          ),
+          4 => array(
+            \'nid\' => 16,
+            \'cid\' => \'4\',
+            \'pid\' => \'1\',
+            \'form_key\' => \'EB_1_3\',
+            \'name\' => \'1.3 Analiza los contenidos de aprendizaje del currículo vigente para su práctica docente.\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_1_3_1|1.3.1 Identifico los campos formativos en que se inscriben los contenidos de aprendizaje de la educación preescolar, primaria o secundaria para su práctica docente.\\r\\nEB_1_3_2|1.3.2 Explico la elección de los contenidos de aprendizaje a desarrollar en mi intervención docente para el logro de los propósitos educativos de la educación básica.\\r\\n",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'3\',
+            \'page_num\' => 1,
+          ),
+          5 => array(
+            \'nid\' => 16,
+            \'cid\' => \'5\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_D2\',
+            \'name\' => \'Dimensión 2\',
+            \'type\' => \'pagebreak\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'next_page_label\' => \'Siguiente\',
+              \'prev_page_label\' => \'Anterior\',
+              \'private\' => 0,
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'3\',
+            \'page_num\' => 2,
+          ),
+          6 => array(
+            \'nid\' => 16,
+            \'cid\' => \'6\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_2\',
+            \'name\' => \'2. Un docente que organiza y evalúa el trabajo educativo, y realiza una intervención didáctica pertinente\',
+            \'type\' => \'fieldset\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'css_classes\' => \'\',
+              \'title_display\' => 0,
+              \'collapsible\' => 0,
+              \'collapsed\' => 0,
+              \'description\' => \'\',
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'4\',
+            \'page_num\' => 2,
+          ),
+          7 => array(
+            \'nid\' => 16,
+            \'cid\' => \'7\',
+            \'pid\' => \'6\',
+            \'form_key\' => \'EB_2_1\',
+            \'name\' => \'2.1 Organiza su intervención docente para el aprendizaje de sus alumnos.\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_2_1_1|2.1.1 Diseño situaciones didácticas para el aprendizaje de los contenidos de acuerdo con el enfoque de las asignaturas y las características de los alumnos, incluyendo las relacionadas con la interculturalidad y las necesidades educativas especiales.\\r\\nEB_2_1_2|2.1.2 Organizo a mis alumnos, el tiempo, los espacios y los materiales necesarios para mi intervención didáctica.\\r\\n",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'5\',
+            \'page_num\' => 2,
+          ),
+          8 => array(
+            \'nid\' => 16,
+            \'cid\' => \'8\',
+            \'pid\' => \'6\',
+            \'form_key\' => \'EB_2_2\',
+            \'name\' => \'2.2 Desarrolla estrategias didácticas para que sus alumnos aprendan.\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_2_2_1|2.2.1 Establezco comunicación con los alumnos acorde con el nivel educativo en el que desarrollo mi  intervención docente.\\r\\nEB_2_2_2|2.2.2 Empleo estrategias didácticas para que mis alumnos aprendan considerando lo que saben, la interacción con sus pares y la participación de todos.\\r\\nEB_2_2_3|2.2.3 Realizo una intervención docente acorde con los aprendizajes esperados, con las necesidades educativas de mis alumnos y con el enfoque de los campos formativos de la educación básica.\\r\\nEB_2_2_4|2.2.4 Empleo estrategias didácticas que permitan a mis alumnos observar, preguntar, imaginar, explicar, buscar soluciones y expresar ideas propias. \\r\\nEB_2_2_5|2.2.5 Utilizo diversos materiales para el logro de los propósitos educativos, considerando las Tecnologías de la Información y la Comunicación disponibles en su contexto. \\r\\nEB_2_2_6|2.2.6 Utilizo estrategias didácticas en el trabajo regular del aula para la atención de todos mis alumnos, en particular aquellos con necesidades educativas especiales. \\r\\nEB_2_2_7|2.2.7 Utilizo estrategias didácticas para atender la diversidad lingüística y cultural presente en el aula. ",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'6\',
+            \'page_num\' => 2,
+          ),
+          9 => array(
+            \'nid\' => 16,
+            \'cid\' => \'9\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_D3\',
+            \'name\' => \'Dimensión 3\',
+            \'type\' => \'pagebreak\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'next_page_label\' => \'Siguiente\',
+              \'prev_page_label\' => \'Anterior\',
+              \'private\' => 0,
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'5\',
+            \'page_num\' => 3,
+          ),
+          10 => array(
+            \'nid\' => 16,
+            \'cid\' => \'10\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_3\',
+            \'name\' => \'3 . Un docente que se reconoce como profesional que mejora continuamente para apoyar a los alumnos en su aprendizaje\',
+            \'type\' => \'fieldset\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'css_classes\' => \'\',
+              \'title_display\' => 0,
+              \'collapsible\' => 0,
+              \'collapsed\' => 0,
+              \'description\' => \'\',
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'6\',
+            \'page_num\' => 3,
+          ),
+          11 => array(
+            \'nid\' => 16,
+            \'cid\' => \'11\',
+            \'pid\' => \'10\',
+            \'form_key\' => \'EB_3_1\',
+            \'name\' => \'3.1 Reflexiona sistemáticamente sobre su práctica docente como medio para mejorarla\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_3_1_1|3.1.1 Determino a partir del análisis de las evidencias de mi práctica profesional aspectos a mejorar en mi función docente. \\r\\nEB_3_1_2|3.1.2 Utilizo referentes teóricos para el análisis de mi práctica profesional con el fin de tomar decisiones que permitan mejorarla. \\r\\nEB_3_1_3|3.1.3 Participo con mis pares en el análisis de nuestra  práctica profesional con la finalidad de identificar aspectos a mejorar.",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'7\',
+            \'page_num\' => 3,
+          ),
+          12 => array(
+            \'nid\' => 16,
+            \'cid\' => \'12\',
+            \'pid\' => \'10\',
+            \'form_key\' => \'EB_3_2\',
+            \'name\' => \'3.2 Selecciona estrategias de estudio y aprendizaje para su desarrollo profesional\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_3_2_1|3.2.1 Utilizo estrategias para la búsqueda, selección y uso de información proveniente de diferentes fuentes que apoyen mi desarrollo profesional. \\r\\nEB_3_2_2|3.2.2 Empleo estrategias para integrar nuevos conocimientos y experiencias que incorporen innovaciones en mi práctica profesional. \\r\\nEB_3_2_3|3.2.3 Utilizo la lectura de diferentes tipos de textos como una estrategia de estudio para fortalecer mi desarrollo profesional. \\r\\nEB_3_2_4|3.2.4 Produzco textos orales y escritos con la finalidad de compartir experiencias y fortalecer mi práctica profesional como una estrategia de aprendizaje. ",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'8\',
+            \'page_num\' => 3,
+          ),
+          13 => array(
+            \'nid\' => 16,
+            \'cid\' => \'13\',
+            \'pid\' => \'10\',
+            \'form_key\' => \'EB_3_3\',
+            \'name\' => \'3.3 Utiliza diferentes medios para enriquecer su desarrollo profesional\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_3_3_1|3.3.1 Participo en redes de colaboración para fortalecer mi desarrollo profesional. \\r\\nEB_3_3_2|3.3.2 Utilizo el Consejo Técnico Escolar como un espacio para el aprendizaje y desarrollo profesional. \\r\\nEB_3_3_3|3.3.3 Utilizo medios impresos y las Tecnologías de la Información y la Comunicación disponibles en mi contexto para fortalecer mi desarrollo profesional. ",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'9\',
+            \'page_num\' => 3,
+          ),
+          14 => array(
+            \'nid\' => 16,
+            \'cid\' => \'14\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_D4\',
+            \'name\' => \'Dimensión 4\',
+            \'type\' => \'pagebreak\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'next_page_label\' => \'Siguiente\',
+              \'prev_page_label\' => \'Anterior\',
+              \'private\' => 0,
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'8\',
+            \'page_num\' => 4,
+          ),
+          15 => array(
+            \'nid\' => 16,
+            \'cid\' => \'15\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_4\',
+            \'name\' => \'4. Un docente que asume las responsabilidades legales y éticas inherentes a su profesión para el bienestar de los alumnos\',
+            \'type\' => \'fieldset\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'css_classes\' => \'\',
+              \'title_display\' => 0,
+              \'collapsible\' => 0,
+              \'collapsed\' => 0,
+              \'description\' => \'\',
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'9\',
+            \'page_num\' => 4,
+          ),
+          16 => array(
+            \'nid\' => 16,
+            \'cid\' => \'16\',
+            \'pid\' => \'15\',
+            \'form_key\' => \'EB_4_1\',
+            \'name\' => \'4.1 Considera los principios filosóficos, los fundamentos legales y las finalidades de la educación pública mexicana en el ejercicio de su función docente\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_4_1_1|4.1.1 Identifico los principios filosóficos planteados en los fundamentos legales de la educación en México. \\r\\nEB_4_1_2|4.1.2 Implemento formas de interacción democrática en el aula y en la escuela como uno de los principios filosóficos de la educación en México. \\r\\nEB_4_1_3|4.1.3 Explico las actividades que realizo en el aula y en la escuela para fortalecer la identidad nacional de mis alumnos como uno de los principios filosóficos de la educación en México. \\r\\nEB_4_1_4|4.1.4 Explico las actividades que realizo en el aula y en la escuela para promover el carácter laico de la educación como uno de los principios filosóficos de la educación en México. \\r\\nEB_4_1_5|4.1.5 Identifico las disposiciones normativas vigentes que rigen mi labor como docente de educación básica. \\r\\nEB_4_1_6|4.1.6 Desarrollo actividades que promuevan el respeto a los derechos humanos y los derechos de niñas y niños en mi práctica docente cotidiana. \\r\\nEB_4_1_7|4.1.7 Aplico la Normalidad Mínima de Operación Escolar en mi práctica docente cotidiana. \\r\\nEB_4_1_8|4.1.8 Desarrollo actividades que promuevan el derecho de niñas y niños para acceder a una educación de calidad, permanecer en la escuela, aprender y concluir oportunamente su educación. ",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'10\',
+            \'page_num\' => 4,
+          ),
+          17 => array(
+            \'nid\' => 16,
+            \'cid\' => \'17\',
+            \'pid\' => \'15\',
+            \'form_key\' => \'EB_4_2\',
+            \'name\' => \'4.2 Establece un ambiente favorable para la sana convivencia y la inclusión educativa en su práctica docente\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_4_2_1|4.2.1 Defino con mis alumnos reglas en el contexto escolar, acordes con la edad y las características de mis alumnos. \\r\\nEB_4_2_2|4.2.2 Defino con mis alumnos reglas en el contexto escolar que incluyan la perspectiva de género y la no discriminación. \\r\\nEB_4_2_3|4.2.3 Implemento estrategias con la comunidad escolar que fomenten actitudes de compromiso, colaboración y solidaridad para la sana convivencia. \\r\\nEB_4_2_4|4.2.4 Implemento estrategias con la comunidad escolar que fomenten el respeto por las diferencias individuales (lingüísticas, culturales, étnicas y socioeconómicas) para la inclusión y equidad educativa. \\r\\nEB_4_2_5|4.2.5 Establezco comunicación con mis alumnos acorde al nivel educativo para propiciar una sana convivencia en el aula y en la escuela. \\r\\nEB_4_2_6|4.2.6 Implemento estrategias que contribuyen a eliminar o minimizar las barreras para el aprendizaje que pueden enfrentar los alumnos con necesidades educativas especiales. ",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'11\',
+            \'page_num\' => 4,
+          ),
+          18 => array(
+            \'nid\' => 16,
+            \'cid\' => \'18\',
+            \'pid\' => \'15\',
+            \'form_key\' => \'EB_4_3\',
+            \'name\' => \'4.3 Considera la integridad y seguridad de los alumnos en el aula y en la escuela en su práctica docente\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_4_3_1|4.3.1 Reconozco las implicaciones éticas y legales que tiene mi comportamiento en la integridad y sano desarrollo de los alumnos. \\r\\nEB_4_3_2|4.3.2 Identifico las conductas que permiten detectar que un alumno sufre abuso o maltrato infantil para prevenir daños y perjuicios. \\r\\nEB_4_3_3|4.3.3 Establezco acciones con la autoridad educativa inmediata para la atención a casos de abuso o maltrato infantil en el ámbito de mi competencia. \\r\\nEB_4_3_4|4.3.4 Establezco acciones con la autoridad educativa inmediata para el seguimiento a casos de abuso o maltrato infantil en el ámbito de mi competencia. \\r\\nEB_4_3_5|4.3.5 Aplico medidas preventivas para evitar enfermedades, accidentes y situaciones de riesgo en el aula y en la escuela, desde mi ámbito de competencia. \\r\\nEB_4_3_6|4.3.6 Reconozco procedimientos para atender casos de emergencia, accidentes, lesiones, desastres naturales y violencia que afectan la integridad y seguridad de los alumnos. ",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'12\',
+            \'page_num\' => 4,
+          ),
+          19 => array(
+            \'nid\' => 16,
+            \'cid\' => \'19\',
+            \'pid\' => \'15\',
+            \'form_key\' => \'EB_4_4\',
+            \'name\' => \'4.4 Demuestra altas expectativas sobre el aprendizaje de todos sus alumnos\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre\\r\\n",
+              \'questions\' => "EB_4_4_1|4.4.1 Reconozco la relación entre las expectativas que tengo sobre el aprendizaje de mis  alumnos y sus logros educativos para fortalecer el aprendizaje de los alumnos. \\r\\nEB_4_4_2|4.4.2 Comunico a mis alumnos altas expectativas acerca de su aprendizaje a partir de sus potencialidades y capacidades. \\r\\nEB_4_4_3|4.4.3 Comunico a las familias de los alumnos las potencialidades y capacidades de los alumnos para generar altas expectativas sobre los aprendizajes de sus hijos.",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'13\',
+            \'page_num\' => 4,
+          ),
+          20 => array(
+            \'nid\' => 16,
+            \'cid\' => \'20\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_D5\',
+            \'name\' => \'Dimensión 5\',
+            \'type\' => \'pagebreak\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'next_page_label\' => \'Siguiente\',
+              \'prev_page_label\' => \'Anterior\',
+              \'private\' => 0,
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'10\',
+            \'page_num\' => 5,
+          ),
+          21 => array(
+            \'nid\' => 16,
+            \'cid\' => \'21\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'EB_5\',
+            \'name\' => \'5. Un docente que participa en el funcionamiento eficaz de la escuela y fomenta su vínculo con la comunidad para asegurar que todos los alumnos concluyan con éxito su escolaridad\',
+            \'type\' => \'fieldset\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'css_classes\' => \'\',
+              \'title_display\' => 0,
+              \'collapsible\' => 0,
+              \'collapsed\' => 0,
+              \'description\' => \'\',
+            ),
+            \'required\' => \'0\',
+            \'weight\' => \'11\',
+            \'page_num\' => 5,
+          ),
+          22 => array(
+            \'nid\' => 16,
+            \'cid\' => \'22\',
+            \'pid\' => \'21\',
+            \'form_key\' => \'EB_5_1\',
+            \'name\' => \'5.1 Realiza acciones en la gestión escolar para contribuir a la calidad de los resultados educativos\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_5_1_1|5.1.1 Participo en el Consejo Técnico Escolar en la construcción de propuestas para dar cumplimiento a la Normalidad Mínima de Operación Escolar. \\r\\nEB_5_1_2|5.1.2 Participo en el Consejo Técnico Escolar en la construcción de propuestas para abatir el rezago educativo y fortalecer el aprendizaje de los alumnos. \\r\\nEB_5_1_3|5.1.3 Participo en el Consejo Técnico Escolar en la construcción de propuestas para favorecer la sana convivencia en la escuela. \\r\\nEB_5_1_4|5.1.4 Participo en la elaboración del diagnóstico con el colectivo escolar sobre los aprendizajes de los alumnos para diseñar estrategias que permitan cumplir con los propósitos educativos. \\r\\nEB_5_1_5|5.1.5 Participo en la elaboración del diagnóstico con el colectivo escolar sobre la organización y funcionamiento de la escuela para fortalecer el aprendizaje de los alumnos. \\r\\nEB_5_1_6|5.1.6 Realizo acciones con la comunidad escolar para atender las áreas de oportunidad de la escuela con el fin de alcanzar sus metas en el marco de la autonomía de gestión. \\r\\nEB_5_1_7|5.1.7 Realizo acciones con la comunidad escolar para el cuidado de los espacios, el mobiliario y los materiales escolares. ",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'14\',
+            \'page_num\' => 5,
+          ),
+          23 => array(
+            \'nid\' => 16,
+            \'cid\' => \'23\',
+            \'pid\' => \'21\',
+            \'form_key\' => \'EB_5_2\',
+            \'name\' => \'5.2. Propicia la colaboración de los padres de familia y de distintas instituciones para apoyar la tarea educativa de la escuela\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_5_2_1|5.2.1 Establezco acuerdos y compromisos con las familias de los alumnos para involucrarlos en la tarea educativa de la escuela. \\r\\nEB_5_2_2|5.2.2 Realizo con el colectivo docente acciones de vinculación con diversas instituciones que apoyen la tarea educativa de la escuela. ",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'15\',
+            \'page_num\' => 5,
+          ),
+          24 => array(
+            \'nid\' => 16,
+            \'cid\' => \'24\',
+            \'pid\' => \'21\',
+            \'form_key\' => \'EB_5_3\',
+            \'name\' => \'5.3 Considera las características culturales y lingüísticas de la comunidad en el trabajo del aula y de la escuela\',
+            \'type\' => \'grid\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'options\' => "1|Algunas veces\\r\\n2|Frecuentemente\\r\\n3|Muy frecuentemente\\r\\n4|Siempre",
+              \'questions\' => "EB_5_3_1|5.3.1 Realizo acciones de gestión escolar para fortalecer la identidad cultural de los alumnos con apego a los propósitos educativos. \\r\\nEB_5_3_2|5.3.2 Identifico los rasgos culturales y lingüísticos de la comunidad para desarrollar acciones que favorezcan los aprendizajes de los alumnos.",
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'sticky\' => 1,
+              \'optrand\' => 0,
+              \'qrand\' => 0,
+              \'unique\' => 0,
+              \'title_display\' => 0,
+              \'custom_option_keys\' => 0,
+              \'custom_question_keys\' => 0,
+              \'description\' => \'\',
+              \'analysis\' => TRUE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'16\',
+            \'page_num\' => 5,
+          ),
+        ),
+        \'conditionals\' => array(),
+      ),
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => NULL,
+      \'field_nivel_educativo\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'2\',
+          ),
+        ),
+      ),
+      \'field_nivel_escuela\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'2\',
+          ),
+        ),
+      ),
+      \'field_nivel_evaluador\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'6\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'0\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Vito Alessio Robles (Primaria)\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'nivel_escuela\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'17c46af0-dd8f-433e-9e6f-cea09f5ce631\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'4b60b3be-53be-4cc3-9636-31c62fadfcf5\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_cuestionario_descripcion\' => array(),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Perfíl Talentum\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'cuestionario\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'252b76fd-f412-4b4f-a181-84a9f1a6da17\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'24d381f6-1fce-4f86-86b4-1b945c02a65d\',
+      \'webform\' => array(
+        \'confirmation\' => \'\',
+        \'confirmation_format\' => NULL,
+        \'redirect_url\' => \'<confirmation>\',
+        \'block\' => \'0\',
+        \'allow_draft\' => \'0\',
+        \'auto_save\' => \'0\',
+        \'confidential\' => \'0\',
+        \'submit_notice\' => \'1\',
+        \'submit_text\' => \'\',
+        \'next_serial\' => 1,
+        \'submit_limit\' => \'-1\',
+        \'submit_interval\' => \'-1\',
+        \'total_submit_limit\' => \'-1\',
+        \'total_submit_interval\' => \'-1\',
+        \'progressbar_page_number\' => \'0\',
+        \'progressbar_percent\' => \'0\',
+        \'progressbar_bar\' => \'1\',
+        \'progressbar_pagebreak_labels\' => \'1\',
+        \'progressbar_include_confirmation\' => \'1\',
+        \'progressbar_label_first\' => \'Start\',
+        \'progressbar_label_confirmation\' => \'Complete\',
+        \'preview\' => 0,
+        \'preview_next_button_label\' => \'\',
+        \'preview_prev_button_label\' => \'\',
+        \'preview_title\' => \'\',
+        \'preview_message\' => \'\',
+        \'preview_message_format\' => NULL,
+        \'preview_excluded_components\' => array(),
+        \'status\' => \'1\',
+        \'record_exists\' => FALSE,
+        \'roles\' => array(
+          \'1\',
+          \'2\',
+        ),
+        \'emails\' => array(),
+        \'components\' => array(),
+        \'conditionals\' => array(),
+      ),
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_resultado_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Dimensión 4\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Dimensión 4\',
+          ),
+        ),
+      ),
+      \'field_resultado_dimension_ref\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'42\',
+          ),
+        ),
+      ),
+      \'field_resultado_nivel\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'2.00\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'D4\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'dummy_resultados_dimension\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'275afc17-49ae-4d09-abde-4ee4a1af6fc4\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'17f3b624-1c7d-4f28-9066-1f3bb4c790ae\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_carga_archivos_anexos\' => array(
+        \'und\' => array(
+          array(
+            \'fid\' => \'6\',
+            \'uid\' => \'1\',
+            \'filename\' => \'guia._portafolio_evidencias_de_ensenanza.pdf\',
+            \'uri\' => \'public://archivos_instrucciones/guia._portafolio_evidencias_de_ensenanza.pdf\',
+            \'filemime\' => \'application/pdf\',
+            \'filesize\' => \'1752768\',
+            \'status\' => \'1\',
+            \'timestamp\' => \'1462912678\',
+            \'uuid\' => \'494f693d-8feb-442e-8fb9-66371f50f18b\',
+            \'rdf_mapping\' => array(),
+            \'display\' => \'1\',
+            \'description\' => \'\',
+          ),
+        ),
+      ),
+      \'field_carga_archivos_instruccion\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Da clic en la siguiente liga para descargar la guía que te ayudará a preparar los archivos para tu portafolio de enseñanza.\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Da clic en la siguiente liga para descargar la guía que te ayudará a preparar los archivos para tu portafolio de enseñanza.\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Portafolio de Enseñanza\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'carga_archivos\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'2f16c8f5-ab9d-4912-8a31-b9d3c8b58d54\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'d1151fa0-0987-4157-b7bb-e0b7f29871a5\',
+      \'webform\' => array(
+        \'nid\' => \'23\',
+        \'next_serial\' => \'1\',
+        \'confirmation\' => \'\',
+        \'confirmation_format\' => \'html_mail\',
+        \'redirect_url\' => \'<confirmation>\',
+        \'status\' => \'1\',
+        \'block\' => \'0\',
+        \'allow_draft\' => \'0\',
+        \'auto_save\' => \'0\',
+        \'submit_notice\' => \'1\',
+        \'confidential\' => \'0\',
+        \'submit_text\' => \'Enviar\',
+        \'submit_limit\' => \'1\',
+        \'submit_interval\' => \'-1\',
+        \'total_submit_limit\' => \'-1\',
+        \'total_submit_interval\' => \'-1\',
+        \'progressbar_bar\' => \'1\',
+        \'progressbar_page_number\' => \'0\',
+        \'progressbar_percent\' => \'0\',
+        \'progressbar_pagebreak_labels\' => \'1\',
+        \'progressbar_include_confirmation\' => \'1\',
+        \'progressbar_label_first\' => \'Start\',
+        \'progressbar_label_confirmation\' => \'Complete\',
+        \'preview\' => \'0\',
+        \'preview_next_button_label\' => \'\',
+        \'preview_prev_button_label\' => \'\',
+        \'preview_title\' => \'\',
+        \'preview_message\' => \'\',
+        \'preview_message_format\' => \'html_mail\',
+        \'preview_excluded_components\' => array(),
+        \'record_exists\' => TRUE,
+        \'roles\' => array(
+          \'4\',
+        ),
+        \'emails\' => array(),
+        \'components\' => array(
+          1 => array(
+            \'nid\' => 23,
+            \'cid\' => \'1\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'archivo_plan_clase\',
+            \'name\' => \'Plan de Clase\',
+            \'type\' => \'file\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'directory\' => \'archivos_portafolios\',
+              \'rename\' => \'plan_clase-[current-user:name]\',
+              \'title_display\' => \'inline\',
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'css_classes\' => \'\',
+              \'filtering\' => array(
+                \'size\' => \'2 MB\',
+                \'types\' => array(
+                  \'txt\',
+                  \'rtf\',
+                  \'pdf\',
+                  \'doc\',
+                  \'docx\',
+                  \'odt\',
+                ),
+                \'addextensions\' => \'\',
+              ),
+              \'scheme\' => \'public\',
+              \'progress_indicator\' => \'throbber\',
+              \'description\' => \'\',
+              \'attributes\' => array(),
+              \'analysis\' => FALSE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'0\',
+            \'page_num\' => 1,
+          ),
+          2 => array(
+            \'nid\' => 23,
+            \'cid\' => \'2\',
+            \'pid\' => \'0\',
+            \'form_key\' => \'archivo_estrategias_ensenanza\',
+            \'name\' => \'Estrategias de Enseñanza\',
+            \'type\' => \'file\',
+            \'value\' => \'\',
+            \'extra\' => array(
+              \'directory\' => \'archivos_portafolios\',
+              \'rename\' => \'estrategias_ensenanza_[current-user:name]\',
+              \'title_display\' => \'inline\',
+              \'description_above\' => 0,
+              \'private\' => 0,
+              \'wrapper_classes\' => \'\',
+              \'css_classes\' => \'\',
+              \'filtering\' => array(
+                \'size\' => \'2 MB\',
+                \'types\' => array(
+                  \'txt\',
+                  \'rtf\',
+                  \'pdf\',
+                  \'doc\',
+                  \'docx\',
+                  \'odt\',
+                ),
+                \'addextensions\' => \'\',
+              ),
+              \'scheme\' => \'public\',
+              \'progress_indicator\' => \'throbber\',
+              \'description\' => \'\',
+              \'attributes\' => array(),
+              \'analysis\' => FALSE,
+            ),
+            \'required\' => \'1\',
+            \'weight\' => \'1\',
+            \'page_num\' => 1,
+          ),
+        ),
+        \'conditionals\' => array(),
+      ),
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => NULL,
+      \'field_docente_email\' => array(
+        \'und\' => array(
+          array(
+            \'email\' => \'julio.gomez@vitoalessiorobles.edu\',
+          ),
+        ),
+      ),
+      \'field_docente_materias\' => array(),
+      \'field_docente_nivel_escuela\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'14\',
+          ),
+        ),
+      ),
+      \'field_docente_usuario\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'11\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'0\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Julio Gómez Fernández\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'docente\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'2f4eca45-bded-472d-b7d2-e593706f068c\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'0e512b2e-c9f0-4a96-ad96-b6fd8fc2dfcb\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_curso_descripcion\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum convallis dolor, nec dignissim mauris finibus ut. Mauris iaculis fringilla ex, ac lacinia dui malesuada et. Integer tempor est non quam aliquet, eu laoreet ipsum elementum. Quisque varius felis et ornare ultricies. Nulla ac feugiat purus, nec sodales nisl. Pellentesque mattis condimentum augue, quis condimentum justo blandit sed. Curabitur congue vulputate nisi, vel blandit mauris. Duis vestibulum pretium elit vel gravida. Nullam tempor nisi eros. Nulla sit amet sem ligula. Maecenas interdum odio diam, tempus hendrerit urna pharetra et. Etiam non mauris vel sem pellentesque laoreet at nec risus. Nunc auctor nisi aliquet metus facilisis cursus in a arcu. Vivamus laoreet at libero non gravida.\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum convallis dolor, nec dignissim mauris finibus ut. Mauris iaculis fringilla ex, ac lacinia dui malesuada et. Integer tempor est non quam aliquet, eu laoreet ipsum elementum. Quisque varius felis et ornare ultricies. Nulla ac feugiat purus, nec sodales nisl. Pellentesque mattis condimentum augue, quis condimentum justo blandit sed. Curabitur congue vulputate nisi, vel blandit mauris. Duis vestibulum pretium elit vel gravida. Nullam tempor nisi eros. Nulla sit amet sem ligula. Maecenas interdum odio diam, tempus hendrerit urna pharetra et. Etiam non mauris vel sem pellentesque laoreet at nec risus. Nunc auctor nisi aliquet metus facilisis cursus in a arcu. Vivamus laoreet at libero non gravida.\',
+          ),
+        ),
+      ),
+      \'field_curso_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'40\',
+          ),
+        ),
+      ),
+      \'field_curso_imagen\' => array(
+        \'und\' => array(
+          array(
+            \'fid\' => \'8\',
+            \'uid\' => \'1\',
+            \'filename\' => \'curso_d2.png\',
+            \'uri\' => \'public://cursos_imagenes/curso_d2.png\',
+            \'filemime\' => \'image/png\',
+            \'filesize\' => \'8731\',
+            \'status\' => \'1\',
+            \'timestamp\' => \'1462936865\',
+            \'uuid\' => \'21d19df0-24cb-46bd-bc3a-6fa1156294f3\',
+            \'rdf_mapping\' => array(),
+            \'alt\' => \'\',
+            \'title\' => \'\',
+            \'width\' => \'231\',
+            \'height\' => \'351\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Habilidades Docentes en el Aula\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'curso\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'62cd6d28-7e25-4236-b244-eca7194f5eaa\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'35af847e-41ce-448e-9af6-ea5e28a42f7d\',
+    ),
+  (object) array(
+      \'body\' => array(),
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Cursos en línea - eLearning\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'page\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'65798194-7d84-4ad8-a0ef-f1e5b0342f82\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'bfee88a7-f722-4ccf-bf89-99beef1e77f7\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_curso_descripcion\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum convallis dolor, nec dignissim mauris finibus ut. Mauris iaculis fringilla ex, ac lacinia dui malesuada et. Integer tempor est non quam aliquet, eu laoreet ipsum elementum. Quisque varius felis et ornare ultricies. Nulla ac feugiat purus, nec sodales nisl. Pellentesque mattis condimentum augue, quis condimentum justo blandit sed. Curabitur congue vulputate nisi, vel blandit mauris. Duis vestibulum pretium elit vel gravida. Nullam tempor nisi eros. Nulla sit amet sem ligula. Maecenas interdum odio diam, tempus hendrerit urna pharetra et. Etiam non mauris vel sem pellentesque laoreet at nec risus. Nunc auctor nisi aliquet metus facilisis cursus in a arcu. Vivamus laoreet at libero non gravida.\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum convallis dolor, nec dignissim mauris finibus ut. Mauris iaculis fringilla ex, ac lacinia dui malesuada et. Integer tempor est non quam aliquet, eu laoreet ipsum elementum. Quisque varius felis et ornare ultricies. Nulla ac feugiat purus, nec sodales nisl. Pellentesque mattis condimentum augue, quis condimentum justo blandit sed. Curabitur congue vulputate nisi, vel blandit mauris. Duis vestibulum pretium elit vel gravida. Nullam tempor nisi eros. Nulla sit amet sem ligula. Maecenas interdum odio diam, tempus hendrerit urna pharetra et. Etiam non mauris vel sem pellentesque laoreet at nec risus. Nunc auctor nisi aliquet metus facilisis cursus in a arcu. Vivamus laoreet at libero non gravida.\',
+          ),
+        ),
+      ),
+      \'field_curso_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'41\',
+          ),
+        ),
+      ),
+      \'field_curso_imagen\' => array(
+        \'und\' => array(
+          array(
+            \'fid\' => \'9\',
+            \'uid\' => \'1\',
+            \'filename\' => \'curso_d3.png\',
+            \'uri\' => \'public://cursos_imagenes/curso_d3.png\',
+            \'filemime\' => \'image/png\',
+            \'filesize\' => \'8492\',
+            \'status\' => \'1\',
+            \'timestamp\' => \'1462936886\',
+            \'uuid\' => \'37921b40-05a2-4c80-a580-1975483a81b3\',
+            \'rdf_mapping\' => array(),
+            \'alt\' => \'\',
+            \'title\' => \'\',
+            \'width\' => \'229\',
+            \'height\' => \'353\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Práctica Docente Eficaz\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'curso\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'70434ad5-5e2b-421d-a551-329b93baf5f7\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'e88a5487-30d4-400d-bf42-3a5d74bff57d\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => NULL,
+      \'field_escuela_admin_email\' => array(
+        \'und\' => array(
+          array(
+            \'email\' => \'admin@republicadechile.edu\',
+          ),
+        ),
+      ),
+      \'field_escuela_admin_usuario\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'8\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'0\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Esc. Sec. Diurna No. 79 República de Chile\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'escuela\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'72ddd25d-d59d-43a4-a340-b95f93b9a0fe\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'a6fa16db-d408-4508-ada8-2d6702532192\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_resultado_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Dimensión 3\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Dimensión 3\',
+          ),
+        ),
+      ),
+      \'field_resultado_dimension_ref\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'41\',
+          ),
+        ),
+      ),
+      \'field_resultado_nivel\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'4.00\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'D3\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'dummy_resultados_dimension\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'77539adc-611b-4df4-97be-1e5f6d4c3bc1\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'c85104ff-0254-4a7f-804b-86f8f154271e\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_cuestionario_descripcion\' => array(),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Código de Ética\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'cuestionario\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'784352e8-a0ef-4c1c-b716-8acb3578abf8\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'a5224137-e12c-4ed4-9a88-e5422d175b34\',
+      \'webform\' => array(
+        \'confirmation\' => \'\',
+        \'confirmation_format\' => NULL,
+        \'redirect_url\' => \'<confirmation>\',
+        \'block\' => \'0\',
+        \'allow_draft\' => \'0\',
+        \'auto_save\' => \'0\',
+        \'confidential\' => \'0\',
+        \'submit_notice\' => \'1\',
+        \'submit_text\' => \'\',
+        \'next_serial\' => 1,
+        \'submit_limit\' => \'-1\',
+        \'submit_interval\' => \'-1\',
+        \'total_submit_limit\' => \'-1\',
+        \'total_submit_interval\' => \'-1\',
+        \'progressbar_page_number\' => \'0\',
+        \'progressbar_percent\' => \'0\',
+        \'progressbar_bar\' => \'1\',
+        \'progressbar_pagebreak_labels\' => \'1\',
+        \'progressbar_include_confirmation\' => \'1\',
+        \'progressbar_label_first\' => \'Start\',
+        \'progressbar_label_confirmation\' => \'Complete\',
+        \'preview\' => 0,
+        \'preview_next_button_label\' => \'\',
+        \'preview_prev_button_label\' => \'\',
+        \'preview_title\' => \'\',
+        \'preview_message\' => \'\',
+        \'preview_message_format\' => NULL,
+        \'preview_excluded_components\' => array(),
+        \'status\' => \'1\',
+        \'record_exists\' => FALSE,
+        \'roles\' => array(
+          \'1\',
+          \'2\',
+        ),
+        \'emails\' => array(),
+        \'components\' => array(),
+        \'conditionals\' => array(),
+      ),
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_curso_descripcion\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "Realizar el perfil de aprendizaje de los estudiantes para, a través de la detección de la forma en que captan y procesan la información, proporcionarles las herramientas que le permitan aprender y encontrar sentido a su aprendizaje, es decir, centrar la atención en los estudiantes y sus procesos de aprendizaje.\\r\\n\\r\\nDesarrolla:\\r\\nParámetros del 1.1 al 1.3\\r\\n\\r\\nVigencia para concluir este curso:\\r\\n1 mes\\r\\n\\r\\nModalidad:\\r\\nCurso en línea",
+            \'format\' => NULL,
+            \'safe_value\' => "Realizar el perfil de aprendizaje de los estudiantes para, a través de la detección de la forma en que captan y procesan la información, proporcionarles las herramientas que le permitan aprender y encontrar sentido a su aprendizaje, es decir, centrar la atención en los estudiantes y sus procesos de aprendizaje.\\r\\n\\r\\nDesarrolla:\\r\\nParámetros del 1.1 al 1.3\\r\\n\\r\\nVigencia para concluir este curso:\\r\\n1 mes\\r\\n\\r\\nModalidad:\\r\\nCurso en línea",
+          ),
+        ),
+      ),
+      \'field_curso_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'39\',
+          ),
+        ),
+      ),
+      \'field_curso_imagen\' => array(
+        \'und\' => array(
+          array(
+            \'fid\' => \'7\',
+            \'uid\' => \'1\',
+            \'filename\' => \'curso_d1.png\',
+            \'uri\' => \'public://cursos_imagenes/curso_d1.png\',
+            \'filemime\' => \'image/png\',
+            \'filesize\' => \'8610\',
+            \'status\' => \'1\',
+            \'timestamp\' => \'1462936530\',
+            \'uuid\' => \'2eb4d607-a1f9-46c6-b2d6-8c7e54bb537d\',
+            \'rdf_mapping\' => array(),
+            \'alt\' => \'\',
+            \'title\' => \'\',
+            \'width\' => \'228\',
+            \'height\' => \'354\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Enseñanza Centrada en el Alumno\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'curso\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'935dccd5-a44d-46fa-8749-43fa4b6d4b5b\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'00ad40d9-4c87-4158-a15c-6e97e50f49df\',
+    ),
+  (object) array(
+      \'body\' => array(),
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Análisis de Resultados\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'page\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'add48c5e-98eb-4303-be73-dd6cfe735e25\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'b4e0b8e7-6b64-4462-8564-f15734cc4d3b\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_resultado_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Dimensión 2\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Dimensión 2\',
+          ),
+        ),
+      ),
+      \'field_resultado_dimension_ref\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'40\',
+          ),
+        ),
+      ),
+      \'field_resultado_nivel\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'3.00\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'D2\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'dummy_resultados_dimension\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'b9c4c39f-2e7a-413b-8bee-2daa2c23879c\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'de7b5648-0a52-459d-b1fd-1aaa4b1098b8\',
+    ),
+  (object) array(
+      \'body\' => array(),
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'FAQ Preguntas Frecuentes\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'page\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'c0d377d8-cd2d-427b-81f9-e43cfef4812d\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'9b2da3a9-dd34-47c0-9830-ffb335e16102\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_curso_descripcion\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum convallis dolor, nec dignissim mauris finibus ut. Mauris iaculis fringilla ex, ac lacinia dui malesuada et. Integer tempor est non quam aliquet, eu laoreet ipsum elementum. Quisque varius felis et ornare ultricies. Nulla ac feugiat purus, nec sodales nisl. Pellentesque mattis condimentum augue, quis condimentum justo blandit sed. Curabitur congue vulputate nisi, vel blandit mauris. Duis vestibulum pretium elit vel gravida. Nullam tempor nisi eros. Nulla sit amet sem ligula. Maecenas interdum odio diam, tempus hendrerit urna pharetra et. Etiam non mauris vel sem pellentesque laoreet at nec risus. Nunc auctor nisi aliquet metus facilisis cursus in a arcu. Vivamus laoreet at libero non gravida.\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum convallis dolor, nec dignissim mauris finibus ut. Mauris iaculis fringilla ex, ac lacinia dui malesuada et. Integer tempor est non quam aliquet, eu laoreet ipsum elementum. Quisque varius felis et ornare ultricies. Nulla ac feugiat purus, nec sodales nisl. Pellentesque mattis condimentum augue, quis condimentum justo blandit sed. Curabitur congue vulputate nisi, vel blandit mauris. Duis vestibulum pretium elit vel gravida. Nullam tempor nisi eros. Nulla sit amet sem ligula. Maecenas interdum odio diam, tempus hendrerit urna pharetra et. Etiam non mauris vel sem pellentesque laoreet at nec risus. Nunc auctor nisi aliquet metus facilisis cursus in a arcu. Vivamus laoreet at libero non gravida.\',
+          ),
+        ),
+      ),
+      \'field_curso_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'42\',
+          ),
+        ),
+      ),
+      \'field_curso_imagen\' => array(
+        \'und\' => array(
+          array(
+            \'fid\' => \'10\',
+            \'uid\' => \'1\',
+            \'filename\' => \'curso_d4.png\',
+            \'uri\' => \'public://cursos_imagenes/curso_d4.png\',
+            \'filemime\' => \'image/png\',
+            \'filesize\' => \'9455\',
+            \'status\' => \'1\',
+            \'timestamp\' => \'1462936902\',
+            \'uuid\' => \'10203f40-300d-46c1-821f-7a874846c835\',
+            \'rdf_mapping\' => array(),
+            \'alt\' => \'\',
+            \'title\' => \'\',
+            \'width\' => \'228\',
+            \'height\' => \'358\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'La Educación en México y la Inclusión Educativa\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'curso\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'c2762745-c4cf-4a0d-b157-44db254466cc\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'0a8cdcca-226e-4f68-a91c-e77a2bbbb9a6\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'1\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_escuela_admin_email\' => array(
+        \'und\' => array(
+          array(
+            \'email\' => \'admin@vitoalessiorobles.edu\',
+          ),
+        ),
+      ),
+      \'field_escuela_admin_usuario\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'4\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Vito Alessio Robles\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'escuela\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'c77ef8ec-9441-45c4-90ae-bccd9482b794\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'948f04cb-50ae-4bc7-a7fc-f3bd182191d9\',
+    ),
+  (object) array(
+      \'body\' => array(),
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Video Demo Plataforma\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'page\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'e1ea6058-d792-4602-b33f-16a24bc8fe89\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'f517d779-5759-4c76-a5d3-ba5499a207ae\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_resultado_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Dimensión 5\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Dimensión 5\',
+          ),
+        ),
+      ),
+      \'field_resultado_dimension_ref\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'43\',
+          ),
+        ),
+      ),
+      \'field_resultado_nivel\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'3.00\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'D5\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'dummy_resultados_dimension\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'e3ca420d-6237-4337-b212-e4dd1ae58422\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'1240ef26-8dcc-41d4-bd68-652d9a457686\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_resultado_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Dimensión 1\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Dimensión 1\',
+          ),
+        ),
+      ),
+      \'field_resultado_dimension_ref\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'39\',
+          ),
+        ),
+      ),
+      \'field_resultado_nivel\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'2.50\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'D1\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'dummy_resultados_dimension\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'e4092aff-da77-4550-ba75-890295fd3ca2\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'4c2b4c12-53d3-4748-b8dd-27d9eda736e3\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'1\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_evaluador_email\' => array(
+        \'und\' => array(
+          array(
+            \'email\' => \'romualdo.huerta@ento.org\',
+          ),
+        ),
+      ),
+      \'field_evaluador_usuario\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'6\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Romualdo Huerta\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'evaluador\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'e52cf8eb-5c76-4e85-a4f8-f0a89d90189a\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'a480b2b2-1ef7-45b0-a001-dd55c44bcd1c\',
+    ),
+  (object) array(
+      \'changed\' => NULL,
+      \'comment\' => \'0\',
+      \'created\' => NULL,
+      \'data\' => \'a:1:{s:7:"overlay";i:0;}\',
+      \'field_curso_descripcion\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum convallis dolor, nec dignissim mauris finibus ut. Mauris iaculis fringilla ex, ac lacinia dui malesuada et. Integer tempor est non quam aliquet, eu laoreet ipsum elementum. Quisque varius felis et ornare ultricies. Nulla ac feugiat purus, nec sodales nisl. Pellentesque mattis condimentum augue, quis condimentum justo blandit sed. Curabitur congue vulputate nisi, vel blandit mauris. Duis vestibulum pretium elit vel gravida. Nullam tempor nisi eros. Nulla sit amet sem ligula. Maecenas interdum odio diam, tempus hendrerit urna pharetra et. Etiam non mauris vel sem pellentesque laoreet at nec risus. Nunc auctor nisi aliquet metus facilisis cursus in a arcu. Vivamus laoreet at libero non gravida.\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum convallis dolor, nec dignissim mauris finibus ut. Mauris iaculis fringilla ex, ac lacinia dui malesuada et. Integer tempor est non quam aliquet, eu laoreet ipsum elementum. Quisque varius felis et ornare ultricies. Nulla ac feugiat purus, nec sodales nisl. Pellentesque mattis condimentum augue, quis condimentum justo blandit sed. Curabitur congue vulputate nisi, vel blandit mauris. Duis vestibulum pretium elit vel gravida. Nullam tempor nisi eros. Nulla sit amet sem ligula. Maecenas interdum odio diam, tempus hendrerit urna pharetra et. Etiam non mauris vel sem pellentesque laoreet at nec risus. Nunc auctor nisi aliquet metus facilisis cursus in a arcu. Vivamus laoreet at libero non gravida.\',
+          ),
+        ),
+      ),
+      \'field_curso_dimension\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'43\',
+          ),
+        ),
+      ),
+      \'field_curso_imagen\' => array(
+        \'und\' => array(
+          array(
+            \'fid\' => \'11\',
+            \'uid\' => \'1\',
+            \'filename\' => \'curso_d5.png\',
+            \'uri\' => \'public://cursos_imagenes/curso_d5.png\',
+            \'filemime\' => \'image/png\',
+            \'filesize\' => \'8696\',
+            \'status\' => \'1\',
+            \'timestamp\' => \'1462936914\',
+            \'uuid\' => \'bdf56b2e-21c7-49a9-892f-8173b611d6fb\',
+            \'rdf_mapping\' => array(),
+            \'alt\' => \'\',
+            \'title\' => \'\',
+            \'width\' => \'230\',
+            \'height\' => \'350\',
+          ),
+        ),
+      ),
+      \'files\' => array(),
+      \'language\' => \'und\',
+      \'last_comment_timestamp\' => NULL,
+      \'log\' => \'\',
+      \'menu\' => NULL,
+      \'name\' => \'admin\',
+      \'nid\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+      \'path\' => NULL,
+      \'picture\' => \'2\',
+      \'promote\' => \'0\',
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'revision_timestamp\' => NULL,
+      \'revision_uid\' => \'1\',
+      \'status\' => \'1\',
+      \'sticky\' => \'0\',
+      \'title\' => \'Gestión Escolar Estratégica\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'type\' => \'curso\',
+      \'uid\' => \'1\',
+      \'uuid\' => \'f26094fb-d0d1-4f49-9dd4-e8f18827e3b3\',
+      \'vid\' => NULL,
+      \'vuuid\' => \'58632d59-22e1-4493-b020-ec3816e05440\',
+    ),
+)',
+);
+  return $node_export;
+}

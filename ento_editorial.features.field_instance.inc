@@ -874,6 +874,50 @@ function ento_editorial_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-page-body'.
+  $field_instances['node-page-body'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => -4,
+    ),
+  );
+
   // Exported field_instance:
   // 'taxonomy_term-dimensiones-field_dimensiones_cursos'.
   $field_instances['taxonomy_term-dimensiones-field_dimensiones_cursos'] = array(
@@ -949,6 +993,7 @@ function ento_editorial_field_default_field_instances() {
   t('Alcance');
   t('Archivos Anexos');
   t('Archivos con Instrucciones que el usuario podrá descargar previo a subir sus propios archivos.');
+  t('Body');
   t('Color');
   t('Correo electrónico del Administrador de la Escuela. Este será usado como su usuario para acceder al sistema.');
   t('Cursos');
