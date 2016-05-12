@@ -1316,7 +1316,7 @@ function ento_editorial_node_export_features_default() {
             \'filemime\' => \'application/pdf\',
             \'filesize\' => \'1752768\',
             \'status\' => \'1\',
-            \'timestamp\' => \'1462912678\',
+            \'timestamp\' => \'1463003594\',
             \'uuid\' => \'494f693d-8feb-442e-8fb9-66371f50f18b\',
             \'rdf_mapping\' => array(),
             \'display\' => \'1\',

@@ -126,35 +126,6 @@ function ento_editorial_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_inicio:<front>.
-  $menu_links['main-menu_inicio:<front>'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'Inicio',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'icon' => array(
-        'bundle' => 'fontawesome',
-        'icon' => 'th-large',
-        'position' => 'title_before',
-        'breadcrumb' => 0,
-        'title_wrapper' => 0,
-        'title_wrapper_element' => 'span',
-        'title_wrapper_class' => 'title',
-      ),
-      'identifier' => 'main-menu_inicio:<front>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_preguntas-frecuentes:node/22.
   $menu_links['main-menu_preguntas-frecuentes:node/22'] = array(
     'menu_name' => 'main-menu',
@@ -213,65 +184,6 @@ function ento_editorial_menu_default_menu_links() {
     'weight' => 0,
     'customized' => 1,
   );
-  // Exported menu link: user-menu_mi-cuenta:user.
-  $menu_links['user-menu_mi-cuenta:user'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'user',
-    'router_path' => 'user',
-    'link_title' => 'Mi Cuenta',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
-      ),
-      'icon' => array(
-        'bundle' => 'fontawesome',
-        'icon' => 'user',
-        'position' => 'title_before',
-        'breadcrumb' => 0,
-        'title_wrapper' => 0,
-        'title_wrapper_element' => 'span',
-        'title_wrapper_class' => 'title',
-      ),
-      'identifier' => 'user-menu_mi-cuenta:user',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -10,
-    'customized' => 1,
-  );
-  // Exported menu link: user-menu_salir:user/logout.
-  $menu_links['user-menu_salir:user/logout'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'user/logout',
-    'router_path' => 'user/logout',
-    'link_title' => 'Salir',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'icon' => array(
-        'bundle' => 'fontawesome',
-        'icon' => 'sign-out',
-        'position' => 'title_before',
-        'breadcrumb' => 0,
-        'title_wrapper' => 0,
-        'title_wrapper_element' => 'span',
-        'title_wrapper_class' => 'title',
-      ),
-      'identifier' => 'user-menu_salir:user/logout',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 10,
-    'customized' => 1,
-  );
 
   // Translatables
   // Included for use with string extractors like potx.
@@ -279,10 +191,7 @@ function ento_editorial_menu_default_menu_links() {
   t('Cursos en línea');
   t('Escuelas');
   t('Evaluadores');
-  t('Inicio');
-  t('Mi Cuenta');
   t('Preguntas Frecuentes');
-  t('Salir');
   t('Video Demo Plataforma');
 
   return $menu_links;
